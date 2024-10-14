@@ -1,0 +1,12 @@
+Available Commands:
+
+helpme
+- displays this help file
+
+switchvuln
+- switches the bot's vulnerability status
+- if set to False, activates whitelisting to protect against command injections
+
+ping <IP>
+- pings the specified IP address or domain
+- vulnerable to command injection if switchvuln is set to True
