@@ -11,7 +11,7 @@ To use:
 - Clone the repo
 - Create a discord application in the discord developer portal (ensure it is a private application, so only you can use it)
 - Add your application to a private discord server
-- Create a text file in the same directory as your application code and put the bot token into it
+- Create a text file named token.txt in the same directory as the application code and put the bot token into it
 - Run the python code, then use commands in discord. Refer to help.txt for available commands.
 
 I began working on this as a hobby project in November 2023. I add things to it when I feel like it in my free time.
