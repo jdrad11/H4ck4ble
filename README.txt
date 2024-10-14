@@ -3,16 +3,16 @@ UNDER NO CIRCUMSTANCES should you allow untrusted users access to running comman
 
 This bot was designed for experimenting with command injection vulnerabilities. The bot has a ping functionality,
 which has the intention of allowing the user to run a ping command and get back the results. However, user input is
-inserted directly into the system ping command, allow injection of malicious commands.
+inserted directly into the system ping command, allowing injection of malicious commands.
 
-The application also has a secure mode, which activates a block of code that prevents command injection through whitelisting.
+The application also has a secure mode, which activates a block of code that prevents command injection through whitelisting. This is only for experimenting with protection against command injection, and does not actually make the bot more secure, as it can be turned off at any time by anyone able to run commands on the bot.
 
 To use:
 - Clone the repo
 - Create a discord application in the discord developer portal (ensure it is a private application, so only you can use it)
 - Add your application to a private discord server
 - Create a text file in the same directory as your application code and put the bot token into it
-- run the python code, then use commands in discord. Refer to help.txt for available commands.
+- Run the python code, then use commands in discord. Refer to help.txt for available commands.
 
 I began working on this as a hobby project in November 2023. I add things to it when I feel like it in my free time.
 
