@@ -14,8 +14,11 @@ whitelisted = string.ascii_letters + string.digits + '.' # characters allowed in
 # displays the help file
 @bot.command()
 async def helpme(ctx):
-    with open('help.txt', 'r') as helpme:
-        await ctx.send(helpme.read())
+    try:
+        with open('help.txt', 'r') as helpme:
+            await ctx.send(helpme.read())
+    except FileNotFoundError:
+        await ctx.send("Are you sure you have the help file downloaded? I couldn't find it \:(")
 
 # switches the bot's vulnerability status
 @bot.command()
@@ -41,7 +44,7 @@ async def ping(ctx, ip):
     except FileNotFoundError:
         await ctx.send('Command produced no output. Please try again')
     else:
-        system(f'del pingout.txt')
+        system('del pingout.txt')
 
 # handles missing ping parameter
 @ping.error
